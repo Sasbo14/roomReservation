@@ -18,4 +18,7 @@ public class User {
         bookings.add(booking);
     }
 
+    public String getEmail() {
+        return email;
+    }
 }

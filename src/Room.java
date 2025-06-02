@@ -28,4 +28,10 @@ public Room(String roomId, int capacity) {
     public void addEquipment(String item) {
         equipmentList.add(item);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s (Capacité: %d, Équipements: %s)",
+                roomId, capacity, String.join(", ", equipmentList));
+    }
 }
